@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.container {
+    height: 50px;
+    width: 100%;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: #EC7272;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7A76C;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black
+}
+
+
+nav ul li a:hover {
+    color: #E0D98C;
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+    }
+}
+
+.greetings {
+    font-weight: 900;
+    font-size: 5rem;
+    color: #E0D98C;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.about-me {
+    color: #ffffff;
+    width: 40%;
+    height: 126px;
+    margin-left: 400px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#projects p {
+    font-weight: 900;
+    color: #E0D98C;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.projects {
+    display: flex;
+    margin-left: 5%;
+    margin: 5% 5%;
+    justify-content: space-between;
+}
+
+.last {
+    margin-right: 5%;
+}
+
+.project-tile {
+    width: 300px;
+    height: 400px;
+    background-color: #C3FF99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.project-tile img {
+    width: 200px;
+    height: 300px;
+    margin-top: -80px;
+}
+
+.description {
+    height: 20%;
+    width: 100%;
+    background-color: #E0D98C;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 1.2rem;
+}
+
+.shortdisc {
+    font-size: 1rem;
+}
+
+.shortdisc2 {
+    font-size: 0.8rem;
+}
+
+#contact p {
+    font-weight: 900;
+    color: #E0D98C;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.socials {
+    height: 400px;
+    margin-left: 310px;
+    padding-bottom: 100px;
+}
+
+.socials img {
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
