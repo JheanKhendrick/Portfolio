@@ -48,6 +48,8 @@ nav ul li a:hover {
 @media (max-width: 500px) {
     nav {
         display: none;
+    }
+    body {
         overflow: scroll;
     }
 }
