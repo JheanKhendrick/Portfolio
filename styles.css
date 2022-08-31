@@ -14,7 +14,6 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     background-color: #EC7272;
-    overflow: hidden;
 }
 
 nav {
@@ -45,12 +44,9 @@ nav ul li a:hover {
     color: #E0D98C;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     nav {
         display: none;
-    }
-    body {
-        overflow: scroll;
     }
 }
 
@@ -62,6 +58,16 @@ nav ul li a:hover {
     margin-left: 200px;
 }
 
+@media (max-width: 800px) {
+    .greetings {
+        font-weight: 600;
+        font-size: 3rem;
+        color: #E0D98C;
+        margin-top: 70px;
+        margin-left: 70px;
+    }
+}
+
 .about-me {
     color: #ffffff;
     width: 40%;
@@ -69,6 +75,16 @@ nav ul li a:hover {
     margin-left: 400px;
     margin-top: 10px;
     text-align: justify;
+}
+
+@media (max-width: 800px) {
+    .about-me {
+        color: #ffffff;
+        width: 50%;
+        height: 126px;
+        margin: 10px auto;
+        text-align: justify;
+    }
 }
 
 #projects p {
@@ -79,12 +95,27 @@ nav ul li a:hover {
     margin-top: 200px;
 }
 
+@media (max-width: 800px) {
+    #projects p {
+        font-weight: 600;
+        color: #E0D98C;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 200px;
+        padding-top: 10px;
+    }
+}
+
 .projects {
     display: flex;
     margin-left: 5%;
-    margin: 5% 5%;
-    justify-content: space-between;
+    margin: 5%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+
 
 .last {
     margin-right: 5%;
@@ -99,6 +130,7 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     z-index: -1;
+    margin-top: 20px;
 }
 
 .project-tile img {
@@ -128,6 +160,14 @@ nav ul li a:hover {
     font-size: 0.8rem;
 }
 
+@media (max-width: 800px) {
+
+    .shortdisc,
+    .shortdisc2 {
+        font-size: 0.6rem;
+    }
+}
+
 #contact p {
     font-weight: 900;
     color: #E0D98C;
@@ -138,13 +178,16 @@ nav ul li a:hover {
 
 .socials {
     height: 400px;
-    margin-left: 310px;
     padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .socials img {
     width: 100px;
     height: 100px;
-    margin-left: 100px;
     margin-top: 50px;
 }
