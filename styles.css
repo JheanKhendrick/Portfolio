@@ -26,6 +26,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul li {
@@ -129,7 +130,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: -1;
     margin-top: 20px;
 }
 
@@ -190,4 +190,10 @@ nav ul li a:hover {
     width: 100px;
     height: 100px;
     margin-top: 50px;
+}
+
+.project {
+    background: gray;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
 }
